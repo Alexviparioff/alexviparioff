@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Foot Lyon - Outils de Pronostics & Suivi</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #1e1e2f;
+      color: white;
+      margin: 0; padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+    header svg {
+      width: 48px;
+      height: 48px;
+      fill: #4caf50;
+    }
+    h1 {
+      font-weight: 700;
+      font-size: 2.4em;
+      color: #4caf50;
+      margin: 0;
+    }
+    nav {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      width: 100%;
+      max-width: 420px;
+      margin-bottom: 30px;
+    }
+    nav a {
+      background-color: #4caf50;
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      border-radius: 12px;
+      font-weight: 600;
+      transition: background-color 0.3s;
+      text-align: center;
+    }
+    nav a:hover {
+      background-color: #43a047;
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      max-width: 800px;
+      height: 480px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #4caf50cc;
+    }
+    @media (max-width: 480px) {
+      iframe {
+        height: 350px;
+      }
+      nav a {
+        font-size: 0.9em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Logo Football simple -->
+    <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" focusable="false">
+      <circle cx="32" cy="32" r="30" stroke="#4caf50" stroke-width="4" fill="none"/>
+      <path d="M32 2 L38 16 L54 18 L42 28 L46 44 L32 36 L18 44 L22 28 L10 18 L26 16 Z" fill="#4caf50"/>
+    </svg>
+    <h1>Foot Lyon - Pronostics & Suivi</h1>
+  </header>
+
+  <nav>
+    <a href="https://chat.openai.com" target="_blank" rel="noopener">ChatGPT (analyse & stratégie)</a>
+    <a href="https://www.forebet.com" target="_blank" rel="noopener">Forebet (IA & prédictions)</a>
+    <a href="https://www.predictz.com" target="_blank" rel="noopener">PredictZ (résultats & pronos)</a>
+    <a href="https://www.sofascore.com" target="_blank" rel="noopener">SofaScore (stats en direct)</a>
+    <a href="https://www.flashscore.fr" target="_blank" rel="noopener">Flashscore (live & historiques)</a>
+    <a href="https://www.whoscored.com" target="_blank" rel="noopener">WhoScored (analyses joueurs & équipes)</a>
+    <a href="https://www.football-data.co.uk" target="_blank" rel="noopener">Football-Data.co.uk (données brutes)</a>
+    <a href="https://www.oddsportal.com" target="_blank" rel="noopener">OddsPortal (comparateur de cotes)</a>
+  </nav>
+
+  <h2>Suivi de tes paris (Google Sheet intégré)</h2>
+  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSRTtiqAhIjv2Wn_qfWJq-j6yfb7I1TuCXTW3zpDWj8TlJqj8zVw9Hd3fW1pzLcO_RLRV64kArR7J_C/pubhtml?widget=true&amp;headers=false"></iframe>
+
+</body>
+</html>
